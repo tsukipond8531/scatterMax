@@ -44,7 +44,7 @@ namespace MieScatteringMax
                 // sqz = sqrt(0.5*pi./z);
                 Complex sqz = Complex.Sqrt(Complex.Divide(0.5 * Math.PI, z));
 
-                // bx = besselj(nu, x).*sqx;
+                // bx = besselj(nu, x).*sqx; ==>> n or nu?
                 Complex[] bx = nu.Select(e => Complex.Multiply(SpecialFunctions.BesselJ(e, x), sqx)).ToArray();
                 // bz = besselj(nu, z).*sqz;
                 Complex[] bz = nu.Select(e => Complex.Multiply(SpecialFunctions.BesselJ(e, z), sqz)).ToArray();

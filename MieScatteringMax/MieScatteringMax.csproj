@@ -69,6 +69,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Mie_abcd.cs" />
+    <Compile Include="Mie_pt.cs" />
+    <Compile Include="Mie_s12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
