@@ -38,6 +38,7 @@ namespace MieScatteringMax
                 double dblVolume = Convert.ToDouble(strVolume);
                 Complex m = new Complex(1, 1);
 
+                // { params } m, k0, a
                 Mie_abcd_result abcdResult = Mie_abcd.calc_mie_abcd(m, dblLambda, dblVolume);
 
                 if (!abcdResult.isSuccess)
