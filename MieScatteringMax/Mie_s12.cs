@@ -41,9 +41,10 @@ namespace MieScatteringMax
                 Complex s1_tmp = new Complex(0, 0);
                 Complex s2_tmp = new Complex(0, 0);
                 double n2;
-                for (int n = 1; n < n_max + 1; n++)
+                int n = 0;
+                for (n = 0; n < n_max; n++)
                 {
-                    n2 = (2 * n + 1) / (n * (n + 1));
+                    n2 = (2 * (n + 1) + 1) / ((n + 1) * ((n + 1) + 1));
 
                     s1_tmp = Complex.Multiply(
                         n2,
@@ -62,6 +63,9 @@ namespace MieScatteringMax
                 {
                     s1 = s1,
                     s2 = s2,
+                    an = an,
+                    bn = bn,
+                    n_max = n_max,
                     isSuccess = true
                 };
             }
@@ -80,6 +84,9 @@ namespace MieScatteringMax
     {
         public Complex s1 { get; set; }
         public Complex s2 { get; set; }
+        public Complex[] an { get; set; }
+        public Complex[] bn { get; set; }
+        public int n_max { get; set; }
         public string errStr { get; set; }
         public bool isSuccess { get; set; }
     }
