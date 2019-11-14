@@ -13,6 +13,8 @@ namespace MieScatteringMax
         {
             #region The Function Mie_s12
             /*
+             * Scattering amplitudes S1 and S2
+             * 
              * { m } complex refractive index, m = m' + im"
              * { k0 } vacuum wave number
              * { a } sphere radius
