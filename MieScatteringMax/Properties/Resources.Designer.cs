@@ -63,9 +63,9 @@ namespace MieScatteringMax.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mie_sky {
+        internal static System.Drawing.Bitmap S12_V_HC_mapping {
             get {
-                object obj = ResourceManager.GetObject("mie_sky", resourceCulture);
+                object obj = ResourceManager.GetObject("S12_V_HC_mapping", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
